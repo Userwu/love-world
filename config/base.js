@@ -37,7 +37,7 @@ module.exports = {
   },
   output:{
     path:commonPath.public,
-    publicPath:'static/',
+    
   },
   resolve:{
     extensions:['','.js','.jsx','.json'],

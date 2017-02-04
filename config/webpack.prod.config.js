@@ -32,13 +32,13 @@ config.devtool = 'cheap-source-map';
  */
 config.module.loaders.push({
   test: /\.css$/,
-  loader: ExtractTextPlugin.extract('style', 'css')
+  loader: ExtractTextPlugin.extract('style', 'css!autoprefixer?{browsers:">1%"}')
 }, {
   test: /\.less$/,
-  loader: ExtractTextPlugin.extract('style', 'css!autoprefixer?browser= >1%!less')
+  loader: ExtractTextPlugin.extract('style', 'css!autoprefixer?{browsers:">1%"}!less')
 },{
   test:/\.scss/,
-  loader:ExtractTextPlugin.extract('style','css!autoprefixer?browser= >1%!sass?outputStyle=expanded')
+  loader:ExtractTextPlugin.extract('style','css!autoprefixer?{browsers:">1%"}!sass?outputStyle=expanded')
 });
 
 /**
