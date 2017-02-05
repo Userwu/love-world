@@ -33,12 +33,12 @@ export default class ImageFigure extends Component{
       })
       
     }
-    if(isCenter){
-      styleObj['zIndex'] = 16
-    }
+    
     var imageFigureClassName = "img-figure";
     imageFigureClassName+= this.props.arrange.isInverse?' is-inverse':'';
-
+    if(isCenter){
+      imageFigureClassName += ' is-center';
+    }
     return (
       <figure  className={imageFigureClassName} style={styleObj} onClick = {this.handleClick.bind(this)}>
         <img src={imageUrl} alt={title}/>

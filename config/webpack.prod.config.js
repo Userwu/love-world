@@ -24,7 +24,9 @@ config.output.chunkFilename = '[id].[chunkhash:6].js';
  * devtool配置
  * @type {String}
  */
-config.devtool = 'cheap-source-map';
+//config.devtool = 'cheap-source-map';
+
+config.devtool = 'cheap-module-source-map';
 
 /**
  * webpack模块配置

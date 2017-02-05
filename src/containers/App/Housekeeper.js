@@ -12,6 +12,7 @@ import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 import './houseKeeper.scss'
 import ImageFigure from '../../components/ImageFigure'
+import ControllerUnit from '../../components/ControllerUnit'
 var imgDatas = require('../../data/stories.json');
 /**
  * 自执行函数，获取图片数据，将图片信息转换成图片url路径信息（webpack中的url-loader，将图片转换成base64）
@@ -233,6 +234,12 @@ export default class HouseKeeper extends Component {
                      arrange = {this.state.imgsArrangeArr[index]}
                      inverse={this.inverse(index)}
                      center={this.center(index)}/>
+      )
+      controllerUnits.push(
+        <ControllerUnit key={index+''}
+                        arrange = {this.state.imgsArrangeArr[index]}
+                        inverse = {this.inverse(index)}
+                        center = {this.center(index)}/>
       )
     })
     return (

@@ -33,7 +33,7 @@ config.output.publicPath = '/';
  * devtool 配置
  * @type {String}
  */
-config.devtool = 'cheap-eval-source-map';
+config.devtool = 'cheap-module-eval-source-map';
 
 /**
  * 入口配置

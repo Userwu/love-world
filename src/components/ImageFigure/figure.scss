@@ -8,13 +8,18 @@
   cursor: pointer;
 
   background-color:#fff;
-
+  border-radius:5px;
   box-sizing:border-box;
   transform-origin: 0 50% 0;
   transform-style: preserve-3d;
-  transition: transform .6s ease-in-out, left .6s ease-in-out, top .6s ease-in-out;
+  transition: transform .6s ease-in-out, left .6s ease-in-out, top .6s ease-in-out,
+              box-shadow .6s ease-in-out;
   &.is-inverse {
     transform: translate(320px) rotateY(180deg);
+  }
+  &.is-center {
+    z-index:11;
+    box-shadow:15px 10px 10px #3d3d3d;
   }
 }
 
@@ -39,7 +44,7 @@ figcaption {
     color:#a7a0a2;
     transform:rotateY(180deg)  translateZ(1px);
     background:#fff;
-
+border-radius:5px;
     backface-visibility: hidden;
     p {
       margin: 0;
