@@ -14,6 +14,7 @@ import './houseKeeper.scss'
 import ImageFigure from '../../components/ImageFigure'
 import ControllerUnit from '../../components/ControllerUnit'
 var imgDatas = require('../../data/stories.json');
+import Canvas from './../Canvas'
 /**
  * 自执行函数，获取图片数据，将图片信息转换成图片url路径信息（webpack中的url-loader，将图片转换成base64）
  * @Author   wuhongxu
@@ -243,6 +244,8 @@ export default class HouseKeeper extends Component {
       )
     })
     return (
+      <div style={{height:'100%',width:'100%'}}>
+      <Canvas/>
       <section className="stage" ref="stage">
         <section className="img-sec">
           {imgFigures}
@@ -251,6 +254,7 @@ export default class HouseKeeper extends Component {
           {controllerUnits}
         </nav>
       </section>
+      </div>
     )
   }
 }

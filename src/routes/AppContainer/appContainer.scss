@@ -1,0 +1,23 @@
+nav.menu{
+  color:white;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:100000;
+  background-color:black;
+}
+a.active{
+  color:white;
+}
+a{
+  text-decoration: none;
+  
+  cursor:pointer;
+  transition:color .6s ease-in-out;
+}
+ul{
+  list-style-type: none;
+}
+a:hover{
+  color:red;
+}
