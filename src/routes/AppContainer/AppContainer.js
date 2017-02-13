@@ -12,7 +12,6 @@ import './appContainer.scss'
 import { Link, IndexLink } from 'react-router'
 export default class AppContainer extends Component {
   render() {
-    console.log(this.props)
     return (
       <div className="stage">
         <nav className = "menu">
