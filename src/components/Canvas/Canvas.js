@@ -125,6 +125,9 @@ export default class Canvas extends Component{
   }
   render(){
     const style={width:'100%',height:'100%',position:'fixed'}
+    if(typeof this.props.position !== 'undefined'){
+      style.position = this.props.position
+    }
     return (
       <canvas ref="canvas" style={style}/>
     )

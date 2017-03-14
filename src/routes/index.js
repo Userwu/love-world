@@ -8,15 +8,15 @@
  * 
  */
 import React,{Component} from 'react'
-import {Router,Route,hashHistory,IndexRoute} from 'react-router'
+import {Router,Route,browserHistory,IndexRoute} from 'react-router'
+import AppContainer from './../containers/AppContainer'
 import HouseKeeper from './App'
-import AppContainer from './AppContainer'
-import Canvas from './Canvas'
+import Home from './Home'
 
 export default (
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
       <Route path="/" component={AppContainer}>
-        <IndexRoute component={Canvas}/>
+        <IndexRoute component={Home}/>
         <Route path="gallery" component={HouseKeeper}/>
       </Route>
     </Router>

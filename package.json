@@ -1,7 +1,7 @@
 {
   "name": "love-world",
   "version": "1.0.0",
-  "description": "送给我的爱人",
+  "description": "demo",
   "main": "index.js",
   "scripts": {
     "start:pre": "webpack --config config/webpack.dll.config.js",
